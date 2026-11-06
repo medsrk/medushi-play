@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Medushi</title>
+<link rel="icon" type="image/png" href="icon.png">
+<meta name="description" content="A small side-view MMORPG by medsrk.">
+<style>
+  :root {
+    --bg: #0c0e14;
+    --panel: #12141c;
+    --border: #5a6078;
+    --text: #e6e8f0;
+    --dim: #8c92a5;
+    --gold: #ffd34d;
+    --button: #30364c;
+    --button-hover: #465070;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 16px;
+  }
+  main {
+    width: 100%;
+    max-width: 560px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    padding: 36px 32px 28px;
+  }
+  h1 {
+    margin: 0 0 4px;
+    color: var(--gold);
+    font-size: 44px;
+    letter-spacing: 0.18em;
+    text-align: center;
+  }
+  .tagline { margin: 0 0 28px; color: var(--dim); text-align: center; }
+  .downloads { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 480px) { .downloads { grid-template-columns: 1fr; } }
+  a.download {
+    display: block;
+    background: var(--button);
+    border: 1px solid var(--border);
+    color: var(--text);
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: center;
+  }
+  a.download:hover, a.download:focus-visible { background: var(--button-hover); border-color: var(--gold); outline: none; }
+  a.download strong { display: block; font-size: 18px; }
+  a.download span { color: var(--dim); font-size: 13px; }
+  .notes { margin: 24px 0 0; padding: 0; list-style: none; color: var(--dim); font-size: 14px; }
+  .notes li { margin: 0 0 10px; }
+  .notes b { color: var(--text); font-weight: 600; }
+  footer { margin-top: 20px; color: var(--dim); font-size: 12px; text-align: center; }
+</style>
+</head>
+<body>
+<main>
+  <h1>MEDUSHI</h1>
+  <p class="tagline">A small side-view MMORPG by medsrk</p>
+  <div class="downloads">
+    <a class="download" href="downloads/Medushi-mac.zip" download><strong>Download for Mac</strong><span>macOS 12 or later, Apple or Intel &middot; 13 MB</span></a>
+    <a class="download" href="downloads/Medushi.exe" download><strong>Download for Windows</strong><span>Windows 10 or later, 64-bit &middot; 16 MB</span></a>
+  </div>
+  <ul class="notes">
+    <li>Download the launcher once: it installs the game, keeps it up to date and starts it.</li>
+    <li><b>Mac:</b> unzip and move Medushi to Applications. The first time, right-click it and choose Open (on recent macOS: try to open it, then System Settings, Privacy &amp; Security, Open Anyway). It is not signed with a paid Apple certificate.</li>
+    <li><b>Windows:</b> if SmartScreen warns about an unrecognised app, choose More info, then Run anyway.</li>
+  </ul>
+  <footer>Version 2026.11.06.0350 &middot; 6 November 2026</footer>
+</main>
+</body>
+</html>
